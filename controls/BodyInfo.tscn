@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://controls/BodyInfo.gd" type="Script" id=1]
+
+[node name="BodyInfo" type="Control"]
+margin_right = 21.0
+margin_bottom = 4.0
+script = ExtResource( 1 )
+
+[node name="TitleLabel" type="Label" parent="."]
+margin_right = 227.0
+margin_bottom = 14.0
+rect_scale = Vector2( 0.05, 0.05 )
+mouse_default_cursor_shape = 5
+custom_colors/font_color = Color( 0, 1, 0.0862745, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Body info:"
+
+[node name="VelocityLabel" type="Label" parent="."]
+margin_top = 1.0
+margin_right = 59.0
+margin_bottom = 15.0
+rect_scale = Vector2( 0.05, 0.05 )
+mouse_default_cursor_shape = 5
+text = "Velocity: "
+
+[node name="PositionLabel" type="Label" parent="."]
+margin_top = 2.0
+margin_right = 105.0
+margin_bottom = 16.0
+rect_scale = Vector2( 0.05, 0.05 )
+mouse_default_cursor_shape = 5
+text = "Position: "
+
+[node name="TimeLabel" type="Label" parent="."]
+margin_top = 3.0
+margin_right = 91.0
+margin_bottom = 17.0
+rect_scale = Vector2( 0.05, 0.05 )
+mouse_default_cursor_shape = 5
+text = "Time: "
+
